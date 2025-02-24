@@ -3,42 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome</title>
+    <title>be-sharp</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap" rel="stylesheet">
     <style>
         body {
             margin: 0;
             padding: 0;
             min-height: 100vh;
-            background-color: #f5f3e8; /* off-cream color */
-            font-family: Georgia, 'Times New Roman', Times, serif; /* serif font */
+            background-color: #fffcf8; /* much lighter eggshell white */
+            font-family: 'Tangerine', cursive;
         }
 
         .container {
-            width: 70%; /* main content width */
-            margin: 0 auto; /* centers the content */
-            padding-top: 8vh; /* gap at the top */
-            text-align: center;
+            width: 80%;
+            margin-left: 10%; /* intentional space from left border */
+            padding-top: 27.6vh; /* positioned higher than before */
         }
 
         h1 {
-            color: #3b63a2; /* not-too-dark blue */
-            font-size: 3vw; /* responsive font size */
+            color: #0066ff; /* more vibrant bright blue */
+            font-size: 6rem; /* larger size for Tangerine readability */
             font-weight: bold;
-            margin-bottom: 2rem;
+            letter-spacing: normal; /* standard kerning */
+            margin: 0 0 1rem 0;
+            line-height: 1;
         }
 
-        p {
-            color: #0e12f5;
-            font-size: 1.2rem;
-            line-height: 1.6;
-            font-weight: normal;
+        .article-title {
+            color: #0147b0; /* vibrant but slightly darker blue */
+            font-size: 2.5rem; /* larger for Tangerine */
+            margin: 0;
+            font-weight: bold;
+            letter-spacing: normal; /* standard kerning */
+        }
+
+        .article-title a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        /* Remove the underline on hover */
+        .article-title a:hover {
+            text-decoration: none;
+        }
+
+        /* Ensure the link doesn't change color after being visited */
+        .article-title a:visited {
+            color: inherit;
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Welcome</h1>
-        <p>Welcome to our website. We are dedicated to providing exceptional service and innovative solutions to meet your needs. Our team of experts brings years of experience and a passion for excellence to every project. We believe in creating lasting relationships with our clients through trust, transparency, and outstanding results.</p>
+        <h1>be sharp</h1>
+        <p class="article-title"><a href="oftheblacksea.html">of the Black Sea</a></p>
+        <p class="article-title"><a href="bouquetoflovesongs.html">a Bouquet of Love Songs</a></p>
     </div>
 </body>
 </html>
