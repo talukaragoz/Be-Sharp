@@ -2,7 +2,7 @@
 
 $secret = "gh7Hg56JKl9pqRs2vWx4sdj334fhsdfhu8w823fdg831h"
 
-$repo_path = '/home/beshfdav/repositories/BeSharp2';
+$repo_path = '/home/beshfdav/repositories/Be-Sharp2';
 
 if (isset($_SERVER['HTTP_X_HUB_SIGNATURE'])) {
     $signature = $_SERVER['HTTP_X_HUB_SIGNATURE'];
