@@ -2,6 +2,5 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/beshfdav/public_html/
-    - export DEPLOYPATHARTICLES=/home/beshfdav/public_html/articles
     - /bin/cp index.html $DEPLOYPATH
-    - /bin/cp -R articles/ $DEPLOYPATHARTICLES
+    - /bin/cp -R articles/ $DEPLOYPATH
