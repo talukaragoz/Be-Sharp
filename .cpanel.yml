@@ -3,4 +3,5 @@ deployment:
   tasks:
     - export DEPLOYPATH=/home/beshfdav/public_html/
     - /bin/cp index.html $DEPLOYPATH
+    - /bin/cp webhook.php $DEPLOYPATH
     - /bin/cp -R articles/ $DEPLOYPATH
