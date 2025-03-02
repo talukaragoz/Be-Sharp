@@ -1,12 +1,9 @@
-</div>
-</div>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>of the Black Sea</title>
+<title>of the Black Sea - Be Sharp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -24,6 +21,9 @@
         margin-left: 10%; /* spacing from left border */
         padding-top: 30vh; /* positioned higher on the page */
         padding-bottom: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the left */
     }
 
     h1 {
@@ -33,6 +33,7 @@
         letter-spacing: normal;
         margin: 0 0 1rem 0;
         line-height: 1;
+        width: fit-content; /* Make the heading only as wide as its content */
     }
 
     .article-content {
@@ -41,6 +42,13 @@
         font-size: 1.1rem;
         line-height: 1.34;
         margin: 0rem 0; /* reduced from 2rem to 0.5rem */
+        width: fit-content; /* Crucial: makes the content only as wide as needed */
+        max-width: 45%; /* limit maximum width */
+    }
+
+    .article-content p {
+        width: 100%; /* Make paragraphs take up the width of their container */
+        display: inline-block; /* Helps with proper text selection */
     }
 
     /* Desktop-specific styling - limit width to just shy of halfway */
@@ -92,3 +100,7 @@
         <p>Following that I would take more pictures of them than days we were together. More declarations of love than ones reciprocated. More time thinking of them than being thought about. But the most radical picture was the one where we were on the precipice of something.<p>
         <p>I found this image in the midst of my journey from recovering from being discarded by them. Slowly at first and then very suddenly. Not a year has gone by, yet the image has more potency than all the ones taken from a place of love and affection. There may be pictures in the future in both our camera rolls that have the other as a background character. I do not matter to them.<p>
         <p>We are strangers once more.<p>
+    </div>
+</div>
+</body>
+</html>

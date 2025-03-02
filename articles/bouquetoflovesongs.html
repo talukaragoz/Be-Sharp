@@ -1,12 +1,9 @@
-</div>
-</div>
-</body>
-</html><!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>a Bouquet of Love Songs</title>
+<title>a Bouquet of Love Songs - Be Sharp</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&family=STIX+Two+Text:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
@@ -24,6 +21,9 @@
         margin-left: 10%; /* spacing from left border */
         padding-top: 30vh; /* positioned higher on the page */
         padding-bottom: 7rem;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align content to the left */
     }
 
     h1 {
@@ -33,6 +33,7 @@
         letter-spacing: normal;
         margin: 0 0 1rem 0;
         line-height: 1;
+        width: fit-content; /* Make the heading only as wide as its content */
     }
 
     .article-content {
@@ -41,6 +42,13 @@
         font-size: 1.1rem;
         line-height: 1.34;
         margin: 0rem 0; /* reduced from 2rem to 0.5rem */
+        width: fit-content; /* Crucial: makes the content only as wide as needed */
+        max-width: 45%; /* limit maximum width */
+    }
+
+    .article-content p {
+        width: 100%; /* Make paragraphs take up the width of their container */
+        display: inline-block; /* Helps with proper text selection */
     }
 
     /* Desktop-specific styling - limit width to just shy of halfway */
@@ -90,3 +98,7 @@
         <p>Loving for Julia is allowing someone in your jungle. You are not Tarzan and they are not Jane. It is more akin to a tug of war. A magnetic field intersecting between two people. In the title track we see how that the magnet in everyone might start to change poles over time. Slowly, but noticeably. </p>
         <p>The feeling of having to conquer the love within your partner is evident, makes you question whether it is healthy (probably not). A central theme in the characters throughout the album is a want to know why the things that happened found her: “What did I do to make you make me feel so bad?” When you face similar challenges to your corpus of love, you also try to understand. Maybe not with a lack of quilt, but you try to piece together a puzzle that was never yours to begin with. You gave your all to share your puzzle with them while they withheld, misled or never shared theirs to begin with.</p>
         <p>Now you are hungover amnesiac detective trying to piece together the grief, looking for any remnants of love that was. The kicker: you don’t have a Kim.</p>
+    </div>
+</div>
+</body>
+</html>
