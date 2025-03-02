@@ -20,6 +20,7 @@
             width: 80%;
             margin-left: 10%; /* intentional space from left border */
             padding-top: 27.6vh; /* positioned higher than before */
+            padding-bottom: 7rem;
         }
 
         h1 {
@@ -29,6 +30,7 @@
             letter-spacing: normal; /* standard kerning */
             margin: 0 0 1rem 0;
             line-height: 1;
+            cursor: pointer;
         }
 
         .article-title {
@@ -53,14 +55,59 @@
         .article-title a:visited {
             color: inherit;
         }
+
+        /* Style for the alternate text that will replace links */
+        .alternate-content {
+            color: #0147b0; /* darker blue for article text */
+            font-family: 'STIX Two Text', serif; /* STIX Two Text font for body */
+            font-size: 1.1rem;
+            line-height: 1.34;
+            margin: 0rem 0; /* reduced from 2rem to 0.5rem */
+            width: fit-content; /* Crucial: makes the content only as wide as needed */
+            max-width: 45%; /* limit maximum width */
+            display: none;
+        }
+
+        
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>be sharp</h1>
-        <p class="article-title"><a href="articles/endlessheedlessennui.html">Endless Heedless Ennui</a></p>
-        <p class="article-title"><a href="articles/bouquetoflovesongs.html">a Bouquet of Love Songs</a></p>
-        <p class="article-title"><a href="articles/oftheblacksea.html">of the Black Sea</a></p>
+        <h1 id="main-title">be sharp</h1>
+        <div id="links-section">
+            <p class="article-title"><a href="articles/endlessheedlessennui.html">Endless Heedless Ennui</a></p>
+            <p class="article-title"><a href="articles/bouquetoflovesongs.html">a Bouquet of Love Songs</a></p>
+            <p class="article-title"><a href="articles/oftheblacksea.html">of the Black Sea</a></p>
+        </div>
+
+        <div id="alternate-content" class="alternate-content">
+            <p>To the reader who has found this unlabeled interaction and actually has continued to read this, thank you. Remember this is a project I have begun in a “Chicken on a Stick”-esque foray after a similarly gut-wrenching heart break (that should be evident from my formational articles).</p>
+            <p>I like talking about music, have so ever since I was young. The challenge of articulation has been something I have struggled with since I have known myself. I will use this website to mangle with life, art and my thoughts about things.</p>
+            <p>From analysis of music ranging betwixt its creation and its consumption to breakdowns of my personal breakdowns, there is only one thing promised: my attempt at honesty.</p>
+            <p>All of the attempts I have given to talking to people close to me about these topics have only driven them further away from me. Hence, I hope you expect some insufferable nonsense amongst the jungle of thoughts I aim to establish.</p>
+            <p>The contents here will change as I change. But they will always be me from a period of time.</p>
+        </div>
     </div>
+
+    <script>
+        // Get references to the elements
+        const mainTitle = document.getElementById('main-title');
+        const linksSection = document.getElementById('links-section');
+        const alternateContent = document.getElementById('alternate-content');
+        
+        // Add click event listener to the title
+        mainTitle.addEventListener('click', function() {
+            // Toggle visibility of links and alternate content
+            if (linksSection.style.display === 'none') {
+                // Show links, hide alternate content
+                linksSection.style.display = 'block';
+                alternateContent.style.display = 'none';
+            } else {
+                // Hide links, show alternate content
+                linksSection.style.display = 'none';
+                alternateContent.style.display = 'block';
+            }
+        });
+    </script>
 </body>
 </html>
