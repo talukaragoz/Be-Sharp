@@ -18,27 +18,31 @@
 
         .container {
             width: 80%;
-            margin-left: 10%; /* intentional space from left border */
-            padding-top: 27.6vh; /* positioned higher than before */
+            margin-left: 10%; /* spacing from left border */
+            padding-top: 27.6vh; /* positioned higher on the page */
             padding-bottom: 7rem;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start; /* Align content to the left */
         }
 
         h1 {
-            color: #0066ff; /* more vibrant bright blue */
-            font-size: 6rem; /* larger size for Tangerine readability */
+            color: #0066ff; /* keeping your bright blue for the main title */
+            font-size: 6rem;
             font-weight: bold;
-            letter-spacing: normal; /* standard kerning */
+            letter-spacing: normal;
             margin: 0 0 1rem 0;
             line-height: 1;
-            cursor: pointer;
+            width: fit-content; /* Make the heading only as wide as its content */
         }
 
         .article-title {
-            color: #0147b0; /* vibrant but slightly darker blue */
-            font-size: 2.5rem; /* larger for Tangerine */
-            margin: 0;
+            color: #0147b0; /* matching the article heading color */
+            font-size: 2.5rem;
             font-weight: bold;
-            letter-spacing: normal; /* standard kerning */
+            letter-spacing: normal;
+            margin: 0;
+            width: fit-content; /* Make the title only as wide as its content */
         }
 
         .article-title a {
@@ -75,6 +79,7 @@
     <div class="container">
         <h1 id="main-title">be sharp</h1>
         <div id="links-section">
+            <p class="article-title"><a href="articles/27questions.html">27 Questions</a></p>
             <p class="article-title"><a href="articles/endlessheedlessennui.html">Endless Heedless Ennui</a></p>
             <p class="article-title"><a href="articles/bouquetoflovesongs.html">a Bouquet of Love Songs</a></p>
             <p class="article-title"><a href="articles/oftheblacksea.html">of the Black Sea</a></p>
