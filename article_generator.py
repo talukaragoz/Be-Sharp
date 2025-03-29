@@ -1,11 +1,13 @@
 from bs4 import BeautifulSoup
 import shutil
+import string
 
 # Ask for the name of the article
 article_name = input("What is the name of the article?\n")
+article_name = article_name.translate(str.maketrans('', '', string.punctuation))
 
 article_link = "articles/" + article_name.lower().replace(" ", "") + ".html"
-home_page_path = "index.html"
+home_page_path = "../index.html"
 
 # Create copy of example html page for the article
 shutil.copyfile("articles/example.html", article_link)
