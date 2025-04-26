@@ -14,7 +14,7 @@ shutil.copyfile("articles/example.html", article_link)
 
 # Editing the home page
 # -------------------------------
-soup = BeautifulSoup(open(home_page_path, "rb"))
+soup = BeautifulSoup(open(home_page_path[3:], "rb"))
 
 link_section = soup.find("div", {"id" : "links-section"})
 
@@ -29,7 +29,7 @@ new_link.append(hyperlink)
 link_section.insert(0, new_link)
 
 # Save the edited home page
-with open(home_page_path, "w", encoding="utf-8") as f:
+with open(home_page_path[3:], "w", encoding="utf-8") as f:
     f.write(soup.prettify())
 # -------------------------------
 
